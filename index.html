@@ -45,8 +45,7 @@
         <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
     </div>
 
-    <h1><a href="http://github.com/emwendelin/javascript-stacktrace">javascript-stacktrace</a>
-      <span class="small">by <a href="http://github.com/emwendelin">emwendelin</a></span></h1>
+    <h1><a href="http://github.com/emwendelin/javascript-stacktrace">javascript-stacktrace</a></h1>
 
     <div class="description">
       Micro-library for getting stack traces in all web browsers
@@ -54,8 +53,9 @@
 
     <h2>Install</h2>
 <p>Include stacktrace.js on page. Call printStackTrace()</p>
+<p><a href="javascript:(function(){loadJS=function(){s=document.createElement('SCRIPT');s.type='text/javascript';s.src='http://eriwen.com/js/stacktrace.js';document.getElementsByTagName('head')[0].appendChild(s);};alertTrace=function(){alert(printStackTrace().join('\n'))};attachToWinError=function(){window.onerror=alertTrace};attachToCustomFunc=function(fn){eval('_old_'+fn+'='+fn+';'+fn+'=function(args){alertTrace();_old_'+fn+'.call(this,args);}')};c=document.createElement('SPAN');cs=c.style;cs.position='absolute';cs.top='0';cs.right='0';cs.backgroundColor='#ddf';t=document.createTextNode('stacktrace.js:');c.appendChild(t);b3=document.createElement('INPUT');b3.type='button';b3.value='Load';b3.onclick=loadJS;c.appendChild(b3);b1=document.createElement('INPUT');b1.type='button';b1.value='window.onerror';b1.onclick=attachToWinError;c.appendChild(b1);i=document.createElement('INPUT');i.type='text';c.appendChild(i);b2=document.createElement('INPUT');b2.type='button';b2.value='Custom';b2.onclick=function(){attachToCustomFunc(i.value)};c.appendChild(b2);document.body.appendChild(c);})();">bookmarklet</a></p>
 <h2>License</h2>
-<p>Domain Public by Eric Wendelin http://eriwen.com/ (2008)
+<pre>Domain Public by Eric Wendelin http://eriwen.com/ (2008)
                  Luke Smith http://lucassmith.name/ (2008)
                  Loic Dachary <loic@dachary.org> (2008)
                  Johan Euphrosine <proppy@aminche.com> (2008)
@@ -95,7 +95,7 @@ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
 SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER 
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, 
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
 <h2>Authors</h2>
 <p>Eric Wendelin (emwendelin@gmail.com)
 <br/>oyvind.kinsey (oyvind.kinsey@brik.no)
