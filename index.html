@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -45,7 +44,7 @@
     </div>
     <h2>Install</h2>
 <p>Include stacktrace.js on page. Call printStackTrace()</p>
-<p><a href="javascript:(function(){loadJS=function(){s=document.createElement('SCRIPT');s.type='text/javascript';s.src='http://eriwen.com/js/stacktrace.js';document.getElementsByTagName('head')[0].appendChild(s);};alertTrace=function(){alert(printStackTrace().join('\n'))};attachToWinError=function(){window.onerror=alertTrace};attachToCustomFunc=function(fn){eval('_old_'+fn+'='+fn+';'+fn+'=function(args){alertTrace();_old_'+fn+'.call(this,args);}')};c=document.createElement('SPAN');cs=c.style;cs.position='absolute';cs.top='0';cs.right='0';cs.backgroundColor='#ddf';t=document.createTextNode('stacktrace.js:');c.appendChild(t);b3=document.createElement('INPUT');b3.type='button';b3.value='Load';b3.onclick=loadJS;c.appendChild(b3);b1=document.createElement('INPUT');b1.type='button';b1.value='window.onerror';b1.onclick=attachToWinError;c.appendChild(b1);i=document.createElement('INPUT');i.type='text';c.appendChild(i);b2=document.createElement('INPUT');b2.type='button';b2.value='Custom';b2.onclick=function(){attachToCustomFunc(i.value)};c.appendChild(b2);document.body.appendChild(c);})();">bookmarklet</a></p>
+<p><a href="javascript:(function(){loadJS=function(){s=document.createElement('SCRIPT');s.type='text/javascript';s.src='http://eriwen.com/js/stacktrace.js';document.getElementsByTagName('head')[0].appendChild(s);};attachToWinError=function(){window.onerror=function(){alert(printStackTrace({guess:true}).join('\n'))}};attachToCustomFunc=function(fn){alert(fn)};c=document.createElement('SPAN');cs=c.style;cs.position='absolute';cs.top='0';cs.right='0';cs.backgroundColor='#ccc';t=document.createTextNode('Javascript%20Stacktrace:%20');c.appendChild(t);b3=document.createElement('INPUT');b3.type='button';b3.value='Load%20stacktrace.js';b3.onclick=loadJS;c.appendChild(b3);b1=document.createElement('INPUT');b1.type='button';b1.value='Attach%20to%20window.onerror';b1.onclick=attachToWinError;c.appendChild(b1);i=document.createElement('INPUT');i.type='text';c.appendChild(i);b2=document.createElement('INPUT');b2.type='button';b2.value='Attach%20to%20custom';b2.onclick=function(){attachToCustomFunc(i.value)};c.appendChild(b2);document.body.appendChild(c);})();">Bookmarklet</a></p>
 <h2>License</h2>
 <pre class="license">Domain Public by Eric Wendelin http://eriwen.com/ (2008)
                  Luke Smith http://lucassmith.name/ (2008)
@@ -89,10 +88,10 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
     <h2>Authors</h2>
-    <ul><li>Eric Wendelin (emwendelin@gmail.com)</li>
-    <li>oyvind.kinsey (oyvind.kinsey@brik.no)</li></ul>
+    <ul><li>Eric Wendelin (emwendelin ^at^ gmail ^dot^ com)</li>
+    <li>Oyvind Kinsey</li></ul>
     <h2>Contact</h2>
-    <p>Eric Wendelin (emwendelin@gmail.com)</p>
+    <p>Eric Wendelin</p>
     <h2>Download</h2>
     <p>
       You can download this project in either
