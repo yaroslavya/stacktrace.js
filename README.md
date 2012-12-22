@@ -55,11 +55,20 @@ foo(); //Will log a stacktrace when 'baz()' is called containing 'foo()'!
 p.deinstrumentFunction(this, 'baz'); //Remove function instrumentation
 ```
 
-# What browsers does stacktrace.js support? #
+## Usage
+ //// UPDATEME
+You can install this via:
+
+ * npm for [node.js](http://nodejs.org) v0.8+: `npm install smap`
+ * [component(1)](https://github.com/component/component): `component install eriwen/smap.js`
+ * [bower](http://twitter.github.com/bower/): `bower install smap`
+
+## Environment Support
 It is currently tested and working on:
+ //// UPDATEME
 
  - Firefox (and Iceweasel) 0.9+
- - Google Chrome 1+
+ - Google Chrome
  - Safari 3.0+ (including iOS 1+)
  - Opera 7+
  - IE 5.5+
