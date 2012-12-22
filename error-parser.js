@@ -1,5 +1,21 @@
 // TODO: AMD/CommonJS/etc wrapper
 (function() {
+    function StackEntry(functionName, srcUrl, lineNumber, charNumber) {
+        // TODO: if used without `new` create a new instance
+        return {
+            fn: functionName,
+            args: [],
+            src: srcUrl,
+            line: lineNumber,
+            char: charNumber
+        }
+    }
+    function ErrorInfo(stack, message) {
+        return {
+            stack: stack,
+            message: message
+        }
+    }
     function ErrorParser() {
         return {
             /**
@@ -15,7 +31,7 @@
                     return this.parseSAFARI;
                 } else if (e.stack && e.number) {
                     return this.parseIE;
-                } else if (typeof e.message === 'string' && typeof window !== 'undefined' && window.opera) {
+                } else if (e['opera#sourceloc'] || e.stacktrace) {
                     return this.parseOPERA;
                 } else if (e.stack) {
                     return this.parseFIREFOX;
@@ -23,6 +39,7 @@
                 return this.parseCRAPPY;
             },
             parseV8: function(e) {
+
                 var stack = (e.stack + '\n').replace(/^\S[^\(]+?[\n$]/gm, '').
                     replace(/^\s+(at eval )?at\s+/gm, '').
                     replace(/^([^\(]+?)([\n$])/gm, '{anonymous}()@$1$2').
@@ -30,7 +47,27 @@
                 stack.pop();
                 return stack;
             },
-            parseSAFARI: function(e) {},
+            parseSAFARI: function(e) {
+                /*
+                 stack: "@file:///Users/eric/src/javascript-stacktrace/test/functional/ExceptionLab.html:48\n" +
+                 "dumpException3@file:///Users/eric/src/javascript-stacktrace/test/functional/ExceptionLab.html:52\n" +
+                 "onclick@file:///Users/eric/src/javascript-stacktrace/test/functional/ExceptionLab.html:82\n" +
+                 "[native code]"
+                 */
+                var raw = e.stack.replace(/\[native code\]\n/m, '')
+                    .replace(/^(?=\w+Error\:).*$\n/m, '')
+                    .replace(/^@/gm, '{anonymous}@')
+                    .split('\n');
+                // TODO: check function identifier defn
+                var re = /^([\{\}\w]+)@(.*)\:(\d+)(\:(\d+))?$/;
+                var enhancedStack = raw.filter(function(entry) {
+                    return entry.indexOf('@') !== -1;
+                }).map(function(entry) {
+                    var m = entry.match(re);
+                    return new StackEntry(m[1], m[2], m[3], m[5]);
+                });
+                return new ErrorInfo(enhancedStack, e.message);
+            },
             parseIE: function(e) {},
             parseFIREFOX: function(e) {},
             parseOPERA: function(e) {
@@ -54,7 +91,10 @@
                 // e.stacktrace && e.stack -> opera11
                 return 'opera11'; // use e.stacktrace, format differs from 'opera10a', 'opera10b'
             },
-            parseCRAPPY: function(e) {}
+            parseCRAPPY: function(e) {},
+            guessAnonymousFunctionName: function() {
+                // IDEA: can we use sourcemaps here?
+            }
         };
     }
 

@@ -243,30 +243,30 @@ CapturedExceptions.firefox_7 = {
 
 CapturedExceptions.firefox_14 = {
     message: "x is null",
-    stack: "@file:///Users/eric/src/javascript-stacktrace/test/functional/ExceptionLab.html:48\n" +
-        "dumpException3@file:///Users/eric/src/javascript-stacktrace/test/functional/ExceptionLab.html:52\n" +
-        "onclick@file:///Users/eric/src/javascript-stacktrace/test/functional/ExceptionLab.html:1\n" +
+    stack: "@scheme://path/to/file.js:48\n" +
+        "dumpException3@scheme://path/to/file.js:52\n" +
+        "onclick@scheme://path/to/file.js:1\n" +
         "",
-    fileName: "file:///Users/eric/src/javascript-stacktrace/test/functional/ExceptionLab.html",
+    fileName: "scheme://path/to/file.js",
     lineNumber: 48
 };
 
 CapturedExceptions.safari_6 = {
     message: "'null' is not an object (evaluating 'x.undef')",
-    stack: "@file:///Users/eric/src/javascript-stacktrace/test/functional/ExceptionLab.html:48\n" +
-        "dumpException3@file:///Users/eric/src/javascript-stacktrace/test/functional/ExceptionLab.html:52\n" +
-        "onclick@file:///Users/eric/src/javascript-stacktrace/test/functional/ExceptionLab.html:82\n" +
+    stack: "@scheme://path/to/file.js:48\n" +
+        "dumpException3@scheme://path/to/file.js:52\n" +
+        "onclick@scheme://path/to/file.js:82\n" +
         "[native code]",
     line: 48,
-    sourceURL: "file:///Users/eric/src/javascript-stacktrace/test/functional/ExceptionLab.html"
+    sourceURL: "scheme://path/to/file.js"
 };
 
 CapturedExceptions.ie_10 = {
     message: "Unable to get property 'undef' of undefined or null reference",
     stack: "TypeError: Unable to get property 'undef' of undefined or null reference\n" +
-        "   at Anonymous function (http://jenkins.eriwen.com/job/stacktrace.js/ws/test/functional/ExceptionLab.html:48:13)\n" +
-        "   at dumpException3 (http://jenkins.eriwen.com/job/stacktrace.js/ws/test/functional/ExceptionLab.html:46:9)\n" +
-        "   at onclick (http://jenkins.eriwen.com/job/stacktrace.js/ws/test/functional/ExceptionLab.html:82:1)",
+        "   at Anonymous function (scheme://path/to/file.js:48:13)\n" +
+        "   at dumpException3 (scheme://path/to/file.js:46:9)\n" +
+        "   at onclick (scheme://path/to/file.js:82:1)",
     description: "Unable to get property 'undef' of undefined or null reference",
     number: -2146823281
 };
