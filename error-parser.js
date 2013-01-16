@@ -17,6 +17,7 @@
         }
     }
     function ErrorParser() {
+        // TODO: declare regexps here
         return {
             /**
              * Given an Error object, return the function that
@@ -28,32 +29,50 @@
                 if (e['arguments'] && e.stack) {
                     return this.parseV8;
                 } else if (e.stack && e.sourceURL) {
-                    return this.parseSAFARI;
+                    return this.parseNitro;
                 } else if (e.stack && e.number) {
-                    return this.parseIE;
+                    return this.parseChakra;
                 } else if (e['opera#sourceloc'] || e.stacktrace) {
                     return this.parseOPERA;
                 } else if (e.stack) {
-                    return this.parseFIREFOX;
+                    return this.parseSpiderMonkey;
                 }
-                return this.parseCRAPPY;
+                return this.parseOther;
             },
-            parseV8: function(e) {
+            parseV8: function(e) { //Chrome and node.js
+                /*
+                 stack: "TypeError: Object #<Object> has no method 'undef'\n" +
+                 "    at Object.createException (http://127.0.0.1:8000/js/stacktrace.js:42:18)\n" +
+                 "    at Object.run (http://127.0.0.1:8000/js/stacktrace.js:31:25)\n" +
+                 "    at printStackTrace (http://127.0.0.1:8000/js/stacktrace.js:18:62)\n" +
+                 "    at bar (http://127.0.0.1:8000/js/test/functional/testcase1.html:13:17)\n" +
+                 "    at bar (http://127.0.0.1:8000/js/test/functional/testcase1.html:16:5)\n" +
+                 "    at foo (http://127.0.0.1:8000/js/test/functional/testcase1.html:20:5)\n" +
+                 "    at http://127.0.0.1:8000/js/test/functional/testcase1.html:24:4"
+                 */
+                var raw = (e.stack + '\n').replace(/^\S[^\(]+?[\n$]/gm, '')
+                    .replace(/^\s+(at eval )?at\s+/gm, '')
+                    .replace(/^([^\(]+?)([\n$])/gm, '{anonymous}()@$1$2')
+                    .replace(/^Object.<anonymous>\s*\(([^\)]+)\)/gm, '{anonymous}()@$1')
+                    .split('\n');
 
-                var stack = (e.stack + '\n').replace(/^\S[^\(]+?[\n$]/gm, '').
-                    replace(/^\s+(at eval )?at\s+/gm, '').
-                    replace(/^([^\(]+?)([\n$])/gm, '{anonymous}()@$1$2').
-                    replace(/^Object.<anonymous>\s*\(([^\)]+)\)/gm, '{anonymous}()@$1').split('\n');
-                stack.pop();
-                return stack;
+                var re = /^\s+at ([\{\}\w]+) \((.*)\:(\d+)(\:(\d+))?$/;
+                var enhancedStack = raw.filter(function(entry) {
+                    return entry.indexOf(' (') !== -1;
+                }).map(function(entry) {
+                    var m = entry.match(re);
+                    return new StackEntry(m[1], m[2], m[3], m[5]);
+                });
+                return new ErrorInfo(enhancedStack, e.message);
             },
-            parseSAFARI: function(e) {
+            parseNitro: function(e) { //Safari 6
                 /*
                  stack: "@file:///Users/eric/src/javascript-stacktrace/test/functional/ExceptionLab.html:48\n" +
                  "dumpException3@file:///Users/eric/src/javascript-stacktrace/test/functional/ExceptionLab.html:52\n" +
                  "onclick@file:///Users/eric/src/javascript-stacktrace/test/functional/ExceptionLab.html:82\n" +
                  "[native code]"
                  */
+                // TODO: optimization - can pull these RegExps out and only compile them once
                 var raw = e.stack.replace(/\[native code\]\n/m, '')
                     .replace(/^(?=\w+Error\:).*$\n/m, '')
                     .replace(/^@/gm, '{anonymous}@')
@@ -68,8 +87,8 @@
                 });
                 return new ErrorInfo(enhancedStack, e.message);
             },
-            parseIE: function(e) {},
-            parseFIREFOX: function(e) {},
+            parseChakra: function(e) {},
+            parseSpiderMonkey: function(e) {},
             parseOPERA: function(e) {
                 // e.message.indexOf("Backtrace:") > -1 -> opera
                 // !e.stacktrace -> opera
@@ -91,7 +110,7 @@
                 // e.stacktrace && e.stack -> opera11
                 return 'opera11'; // use e.stacktrace, format differs from 'opera10a', 'opera10b'
             },
-            parseCRAPPY: function(e) {},
+            parseOther: function(e) {},
             guessAnonymousFunctionName: function() {
                 // IDEA: can we use sourcemaps here?
             }
