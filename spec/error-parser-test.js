@@ -43,24 +43,15 @@ describe('error-parser.js', function() {
 
         describe('#parseV8', function() {
             var unit = new ErrorParser();
+            // FIXME: mock up an impl that used Error.prepareStackTrace
             it('should parse V8 Errors', function() {
                 var errorInfo = unit.parseV8(CapturedExceptions.chrome_15);
                 expect(errorInfo.stack).toBeTruthy();
+                expect(errorInfo.stack[0]).toEqual({fn: 'bar', args: [], src: 'scheme://path/to/file.js', line: '13', char: '17'});
+                expect(errorInfo.stack[1]).toEqual({fn: 'bar', args: [], src: 'scheme://path/to/file.js', line: '16', char: '5'});
+                expect(errorInfo.stack[2]).toEqual({fn: 'foo', args: [], src: 'scheme://path/to/file.js', line: '20', char: '5'});
                 expect(errorInfo.stack.length).toBe(3);
             });
         });
     });
-
-//    describe('Map::merge', function() {
-//        it('should throw an Error if input is not a Map', function() {
-//            var expectedError = new TypeError('Cannot merge with objects that are not Maps');
-//            expect(function() { new Map().merge() }).toThrow(expectedError);
-//        });
-//
-//        it('should handle empty maps', function() {
-//            var map = new Map();
-//            var mergedMap = map.merge(new Map());
-//            expect(mergedMap.keys().length).toBe(0);
-//        });
-//    });
 });

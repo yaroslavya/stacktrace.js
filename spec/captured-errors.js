@@ -9,13 +9,13 @@ CapturedExceptions.opera_854 = {
   "    ex = ex || this.createException();\n" +
   "  Line 18 of linked script file://localhost/G:/js/stacktrace.js\n" +
   "    var p = new printStackTrace.implementation(), result = p.run(ex);\n" +
-  "  Line 4 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n" +
+  "  Line 4 of inline#1 script in file://localhost/G:/js/file.js\n" +
   "    printTrace(printStackTrace());\n" +
-  "  Line 7 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n" +
+  "  Line 7 of inline#1 script in file://localhost/G:/js/file.js\n" +
   "    bar(n - 1);\n" +
-  "  Line 11 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n" +
+  "  Line 11 of inline#1 script in file://localhost/G:/js/file.js\n" +
   "    bar(2);\n" +
-  "  Line 15 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n" +
+  "  Line 15 of inline#1 script in file://localhost/G:/js/file.js\n" +
   "    foo();\n" +
   "",
   'opera#sourceloc': 44
@@ -30,13 +30,13 @@ CapturedExceptions.opera_902 = {
   "    ex = ex || this.createException();\n" +
   "  Line 18 of linked script file://localhost/G:/js/stacktrace.js\n" +
   "    var p = new printStackTrace.implementation(), result = p.run(ex);\n" +
-  "  Line 4 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n" +
+  "  Line 4 of inline#1 script in file://localhost/G:/js/file.js\n" +
   "    printTrace(printStackTrace());\n" +
-  "  Line 7 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n" +
+  "  Line 7 of inline#1 script in file://localhost/G:/js/file.js\n" +
   "    bar(n - 1);\n" +
-  "  Line 11 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n" +
+  "  Line 11 of inline#1 script in file://localhost/G:/js/file.js\n" +
   "    bar(2);\n" +
-  "  Line 15 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n" +
+  "  Line 15 of inline#1 script in file://localhost/G:/js/file.js\n" +
   "    foo();\n" +
   "",
   'opera#sourceloc': 44
@@ -51,13 +51,13 @@ CapturedExceptions.opera_927 = {
   "    ex = ex || this.createException();\n" +
   "  Line 18 of linked script file://localhost/G:/js/stacktrace.js\n" +
   "    var p = new printStackTrace.implementation(), result = p.run(ex);\n" +
-  "  Line 4 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n" +
+  "  Line 4 of inline#1 script in file://localhost/G:/js/file.js\n" +
   "    printTrace(printStackTrace());\n" +
-  "  Line 7 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n" +
+  "  Line 7 of inline#1 script in file://localhost/G:/js/file.js\n" +
   "    bar(n - 1);\n" +
-  "  Line 11 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n" +
+  "  Line 11 of inline#1 script in file://localhost/G:/js/file.js\n" +
   "    bar(2);\n" +
-  "  Line 15 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n" +
+  "  Line 15 of inline#1 script in file://localhost/G:/js/file.js\n" +
   "    foo();\n" +
   "",
   'opera#sourceloc': 43
@@ -72,13 +72,13 @@ CapturedExceptions.opera_964 = {
   "            ex = ex || this.createException();\n" +
   "  Line 18 of linked script file://localhost/G:/js/stacktrace.js: In function printStackTrace\n" +
   "        var p = new printStackTrace.implementation(), result = p.run(ex);\n" +
-  "  Line 4 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html: In function bar\n" +
+  "  Line 4 of inline#1 script in file://localhost/G:/js/file.js: In function bar\n" +
   "             printTrace(printStackTrace());\n" +
-  "  Line 7 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html: In function bar\n" +
+  "  Line 7 of inline#1 script in file://localhost/G:/js/file.js: In function bar\n" +
   "           bar(n - 1);\n" +
-  "  Line 11 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html: In function foo\n" +
+  "  Line 11 of inline#1 script in file://localhost/G:/js/file.js: In function foo\n" +
   "           bar(2);\n" +
-  "  Line 15 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n" +
+  "  Line 15 of inline#1 script in file://localhost/G:/js/file.js\n" +
   "         foo();\n" +
   "",
   'opera#sourceloc': 42,
@@ -86,13 +86,13 @@ CapturedExceptions.opera_964 = {
   "            ex = ex || this.createException();\n" +
   "  Line 18 of linked script file://localhost/G:/js/stacktrace.js: In function printStackTrace\n" +
   "        var p = new printStackTrace.implementation(), result = p.run(ex);\n" +
-  "  Line 4 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html: In function bar\n" +
+  "  Line 4 of inline#1 script in file://localhost/G:/js/file.js: In function bar\n" +
   "             printTrace(printStackTrace());\n" +
-  "  Line 7 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html: In function bar\n" +
+  "  Line 7 of inline#1 script in file://localhost/G:/js/file.js: In function bar\n" +
   "           bar(n - 1);\n" +
-  "  Line 11 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html: In function foo\n" +
+  "  Line 11 of inline#1 script in file://localhost/G:/js/file.js: In function foo\n" +
   "           bar(2);\n" +
-  "  Line 15 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n" +
+  "  Line 15 of inline#1 script in file://localhost/G:/js/file.js\n" +
   "         foo();\n" +
   ""
 };
@@ -106,13 +106,13 @@ CapturedExceptions.opera_1010 = {
   "            ex = ex || this.createException();\n" +
   "  Line 18 of linked script file://localhost/G:/js/stacktrace.js: In function printStackTrace\n" +
   "        var p = new printStackTrace.implementation(), result = p.run(ex);\n" +
-  "  Line 4 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html: In function bar\n" +
+  "  Line 4 of inline#1 script in file://localhost/G:/js/file.js: In function bar\n" +
   "             printTrace(printStackTrace());\n" +
-  "  Line 7 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html: In function bar\n" +
+  "  Line 7 of inline#1 script in file://localhost/G:/js/file.js: In function bar\n" +
   "           bar(n - 1);\n" +
-  "  Line 11 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html: In function foo\n" +
+  "  Line 11 of inline#1 script in file://localhost/G:/js/file.js: In function foo\n" +
   "           bar(2);\n" +
-  "  Line 15 of inline#1 script in file://localhost/G:/js/test/functional/testcase1.html\n" +
+  "  Line 15 of inline#1 script in file://localhost/G:/js/file.js\n" +
   "         foo();\n" +
   ""
 };
@@ -122,17 +122,17 @@ CapturedExceptions.opera_1063 = {
   stack: "<anonymous function: createException>([arguments not available])@file://localhost/G:/js/stacktrace.js:42\n" +
   "<anonymous function: run>([arguments not available])@file://localhost/G:/js/stacktrace.js:27\n" +
   "printStackTrace([arguments not available])@file://localhost/G:/js/stacktrace.js:18\n" +
-  "bar([arguments not available])@file://localhost/G:/js/test/functional/testcase1.html:4\n" +
-  "bar([arguments not available])@file://localhost/G:/js/test/functional/testcase1.html:7\n" +
-  "foo([arguments not available])@file://localhost/G:/js/test/functional/testcase1.html:11\n" +
-  "@file://localhost/G:/js/test/functional/testcase1.html:15",
+  "bar([arguments not available])@file://localhost/G:/js/file.js:4\n" +
+  "bar([arguments not available])@file://localhost/G:/js/file.js:7\n" +
+  "foo([arguments not available])@file://localhost/G:/js/file.js:11\n" +
+  "@file://localhost/G:/js/file.js:15",
   stacktrace: "<anonymous function: createException>([arguments not available])@file://localhost/G:/js/stacktrace.js:42\n" +
   "<anonymous function: run>([arguments not available])@file://localhost/G:/js/stacktrace.js:27\n" +
   "printStackTrace([arguments not available])@file://localhost/G:/js/stacktrace.js:18\n" +
-  "bar([arguments not available])@file://localhost/G:/js/test/functional/testcase1.html:4\n" +
-  "bar([arguments not available])@file://localhost/G:/js/test/functional/testcase1.html:7\n" +
-  "foo([arguments not available])@file://localhost/G:/js/test/functional/testcase1.html:11\n" +
-  "@file://localhost/G:/js/test/functional/testcase1.html:15"
+  "bar([arguments not available])@file://localhost/G:/js/file.js:4\n" +
+  "bar([arguments not available])@file://localhost/G:/js/file.js:7\n" +
+  "foo([arguments not available])@file://localhost/G:/js/file.js:11\n" +
+  "@file://localhost/G:/js/file.js:15"
 };
 
 CapturedExceptions.opera_1111 = {
@@ -140,23 +140,23 @@ CapturedExceptions.opera_1111 = {
   stack: "<anonymous function: createException>([arguments not available])@file://localhost/G:/js/stacktrace.js:42\n" +
   "<anonymous function: run>([arguments not available])@file://localhost/G:/js/stacktrace.js:27\n" +
   "printStackTrace([arguments not available])@file://localhost/G:/js/stacktrace.js:18\n" +
-  "bar([arguments not available])@file://localhost/G:/js/test/functional/testcase1.html:4\n" +
-  "bar([arguments not available])@file://localhost/G:/js/test/functional/testcase1.html:7\n" +
-  "foo([arguments not available])@file://localhost/G:/js/test/functional/testcase1.html:11\n" +
-  "@file://localhost/G:/js/test/functional/testcase1.html:15",
+  "bar([arguments not available])@file://localhost/G:/js/file.js:4\n" +
+  "bar([arguments not available])@file://localhost/G:/js/file.js:7\n" +
+  "foo([arguments not available])@file://localhost/G:/js/file.js:11\n" +
+  "@file://localhost/G:/js/file.js:15",
   stacktrace: "Error thrown at line 42, column 12 in <anonymous function: createException>() in file://localhost/G:/js/stacktrace.js:\n" +
   "    this.undef();\n" +
   "called from line 27, column 8 in <anonymous function: run>(ex) in file://localhost/G:/js/stacktrace.js:\n" +
   "    ex = ex || this.createException();\n" +
   "called from line 18, column 4 in printStackTrace(options) in file://localhost/G:/js/stacktrace.js:\n" +
   "    var p = new printStackTrace.implementation(), result = p.run(ex);\n" +
-  "called from line 4, column 5 in bar(n) in file://localhost/G:/js/test/functional/testcase1.html:\n" +
+  "called from line 4, column 5 in bar(n) in file://localhost/G:/js/file.js:\n" +
   "    printTrace(printStackTrace());\n" +
-  "called from line 7, column 4 in bar(n) in file://localhost/G:/js/test/functional/testcase1.html:\n" +
+  "called from line 7, column 4 in bar(n) in file://localhost/G:/js/file.js:\n" +
   "    bar(n - 1);\n" +
-  "called from line 11, column 4 in foo() in file://localhost/G:/js/test/functional/testcase1.html:\n" +
+  "called from line 11, column 4 in foo() in file://localhost/G:/js/file.js:\n" +
   "    bar(2);\n" +
-  "called from line 15, column 3 in file://localhost/G:/js/test/functional/testcase1.html:\n" +
+  "called from line 15, column 3 in file://localhost/G:/js/file.js:\n" +
   "    foo();"
 };
 
@@ -165,23 +165,23 @@ CapturedExceptions.opera_1151 = {
   stack: "<anonymous function: createException>([arguments not available])@file://localhost/G:/js/stacktrace.js:42\n" +
   "<anonymous function: run>([arguments not available])@file://localhost/G:/js/stacktrace.js:27\n" +
   "printStackTrace([arguments not available])@file://localhost/G:/js/stacktrace.js:18\n" +
-  "bar([arguments not available])@file://localhost/G:/js/test/functional/testcase1.html:4\n" +
-  "bar([arguments not available])@file://localhost/G:/js/test/functional/testcase1.html:7\n" +
-  "foo([arguments not available])@file://localhost/G:/js/test/functional/testcase1.html:11\n" +
-  "@file://localhost/G:/js/test/functional/testcase1.html:15",
+  "bar([arguments not available])@file://localhost/G:/js/file.js:4\n" +
+  "bar([arguments not available])@file://localhost/G:/js/file.js:7\n" +
+  "foo([arguments not available])@file://localhost/G:/js/file.js:11\n" +
+  "@file://localhost/G:/js/file.js:15",
   stacktrace: "Error thrown at line 42, column 12 in <anonymous function: createException>() in file://localhost/G:/js/stacktrace.js:\n" +
   "    this.undef();\n" +
   "called from line 27, column 8 in <anonymous function: run>(ex) in file://localhost/G:/js/stacktrace.js:\n" +
   "    ex = ex || this.createException();\n" +
   "called from line 18, column 4 in printStackTrace(options) in file://localhost/G:/js/stacktrace.js:\n" +
   "    var p = new printStackTrace.implementation(), result = p.run(ex);\n" +
-  "called from line 4, column 5 in bar(n) in file://localhost/G:/js/test/functional/testcase1.html:\n" +
+  "called from line 4, column 5 in bar(n) in file://localhost/G:/js/file.js:\n" +
   "    printTrace(printStackTrace());\n" +
-  "called from line 7, column 4 in bar(n) in file://localhost/G:/js/test/functional/testcase1.html:\n" +
+  "called from line 7, column 4 in bar(n) in file://localhost/G:/js/file.js:\n" +
   "    bar(n - 1);\n" +
-  "called from line 11, column 4 in foo() in file://localhost/G:/js/test/functional/testcase1.html:\n" +
+  "called from line 11, column 4 in foo() in file://localhost/G:/js/file.js:\n" +
   "    bar(2);\n" +
-  "called from line 15, column 3 in file://localhost/G:/js/test/functional/testcase1.html:\n" +
+  "called from line 15, column 3 in file://localhost/G:/js/file.js:\n" +
   "    foo();"
 };
 
@@ -189,13 +189,13 @@ CapturedExceptions.chrome_15 = {
   'arguments': ["undef"],
   message: "Object #<Object> has no method 'undef'",
   stack: "TypeError: Object #<Object> has no method 'undef'\n" +
-  "    at Object.createException (http://127.0.0.1:8000/js/stacktrace.js:42:18)\n" +
-  "    at Object.run (http://127.0.0.1:8000/js/stacktrace.js:31:25)\n" +
-  "    at printStackTrace (http://127.0.0.1:8000/js/stacktrace.js:18:62)\n" +
-  "    at bar (http://127.0.0.1:8000/js/test/functional/testcase1.html:13:17)\n" +
-  "    at bar (http://127.0.0.1:8000/js/test/functional/testcase1.html:16:5)\n" +
-  "    at foo (http://127.0.0.1:8000/js/test/functional/testcase1.html:20:5)\n" +
-  "    at http://127.0.0.1:8000/js/test/functional/testcase1.html:24:4"
+  "    at Object.createException (scheme://path/to/stacktrace.js:42:18)\n" +
+  "    at Object.run (scheme://path/to/stacktrace.js:31:25)\n" +
+  "    at printStackTrace (scheme://path/to/stacktrace.js:18:62)\n" +
+  "    at bar (scheme://path/to/file.js:13:17)\n" +
+  "    at bar (scheme://path/to/file.js:16:5)\n" +
+  "    at foo (scheme://path/to/file.js:20:5)\n" +
+  "    at scheme://path/to/file.js:24:4"
 };
 
 CapturedExceptions.firefox_36 = {
@@ -206,10 +206,10 @@ CapturedExceptions.firefox_36 = {
   stack: "()@http://127.0.0.1:8000/js/stacktrace.js:44\n" +
   "(null)@http://127.0.0.1:8000/js/stacktrace.js:31\n" +
   "printStackTrace()@http://127.0.0.1:8000/js/stacktrace.js:18\n" +
-  "bar(1)@http://127.0.0.1:8000/js/test/functional/testcase1.html:13\n" +
-  "bar(2)@http://127.0.0.1:8000/js/test/functional/testcase1.html:16\n" +
-  "foo()@http://127.0.0.1:8000/js/test/functional/testcase1.html:20\n" +
-  "@http://127.0.0.1:8000/js/test/functional/testcase1.html:24\n" +
+  "bar(1)@http://127.0.0.1:8000/js/file.js:13\n" +
+  "bar(2)@http://127.0.0.1:8000/js/file.js:16\n" +
+  "foo()@http://127.0.0.1:8000/js/file.js:20\n" +
+  "@http://127.0.0.1:8000/js/file.js:24\n" +
   ""
 };
 
@@ -221,10 +221,10 @@ CapturedExceptions.firefox_36_file = {
   stack: "()@file:///home/user/js/stacktrace.js:44\n" +
   "(null)@file:///home/user/js/stacktrace.js:31\n" +
   "printStackTrace()@file:///home/user/js/stacktrace.js:18\n" +
-  "bar(1)@file:///home/user/js/test/functional/testcase1.html:13\n" +
-  "bar(2)@file:///home/user/js/test/functional/testcase1.html:16\n" +
-  "foo()@file:///home/user/js/test/functional/testcase1.html:20\n" +
-  "@file:///home/user/js/test/functional/testcase1.html:24\n" +
+  "bar(1)@file:///home/user/js/file.js:13\n" +
+  "bar(2)@file:///home/user/js/file.js:16\n" +
+  "foo()@file:///home/user/js/file.js:20\n" +
+  "@file:///home/user/js/file.js:24\n" +
   ""
 };
 
@@ -234,10 +234,10 @@ CapturedExceptions.firefox_7 = {
   stack: "()@file:///G:/js/stacktrace.js:44\n" +
   "(null)@file:///G:/js/stacktrace.js:31\n" +
   "printStackTrace()@file:///G:/js/stacktrace.js:18\n" +
-  "bar(1)@file:///G:/js/test/functional/testcase1.html:13\n" +
-  "bar(2)@file:///G:/js/test/functional/testcase1.html:16\n" +
-  "foo()@file:///G:/js/test/functional/testcase1.html:20\n" +
-  "@file:///G:/js/test/functional/testcase1.html:24\n" +
+  "bar(1)@file:///G:/js/file.js:13\n" +
+  "bar(2)@file:///G:/js/file.js:16\n" +
+  "foo()@file:///G:/js/file.js:20\n" +
+  "@file:///G:/js/file.js:24\n" +
   ""
 };
 
